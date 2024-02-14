@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Create GitHub issue from Anki forum post",
+    "description": "Create GitHub issue from Anki forum post",
+    "version": "1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": "anki.png"
+    },
+    "icons": {
+        "48": "anki.png",
+        "128": "anki.png"
+    },
+
+    "permissions": ["scripting", "activeTab"]
+}
