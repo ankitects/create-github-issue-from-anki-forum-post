@@ -15,7 +15,7 @@ async function OpenGithubIssue(activeTab) {
     body = '> ' + body.replaceAll("\n", "\n> ") + `\n\nOriginally reported on ${activeTab.url}`;
     chrome.tabs.create(
         {
-            url: `https://github.com/ankitects/anki/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`,
+            url: `https://github.com/ankitects/anki/issues/new?template=bug-report.md&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`,
             active: true,
         });
 
